@@ -38,7 +38,7 @@ public class washmachine : MonoBehaviour
                 {
                     gameManager.wash = 2;
                 }
-                else if (gameManager.hold == 0 && gameManager.wash == 2) { audio.PlayOneShot(op, 1); gameManager.wash = 3; gameManager.fin++; gameManager.chance += 3; }
+                else if (gameManager.hold == 0 && gameManager.wash == 2) { audio.PlayOneShot(op, 1); gameManager.wash = 3; gameManager.fin++; gameManager.chance += 18; }
                 else if (gameManager.wash < 3) { audio.PlayOneShot(op, 1); gameManager.cloth++; }
             }
         }

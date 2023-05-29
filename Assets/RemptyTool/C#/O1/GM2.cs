@@ -8,8 +8,8 @@ public class GM2 : MonoBehaviour
     //singleton
     //單例模式
     static GM2 instance;
-    public int chance,Light,x, hanging,open,y,z,putdown,dietime,safe,w,gasound,stright,bend,choose,p,place,check,pushed;
-    public float ds;
+    public int chance,Light,x, hanging,open,y,z,putdown,dietime,safe,w,gasound,stright,bend,choose,p,place,check,pushed,clear,call,bb,numb, babbletime, wait;
+    public float ds, barrierds;
     
     private float time = 0;
     private float deltaTime;
@@ -27,9 +27,13 @@ public class GM2 : MonoBehaviour
             chance = 0;
             Light = 0;
             w = 0;
+            numb = 0;
             x = 0;
             y = 0;
             z = 0;
+            bb = 0;
+            call = 0;
+            clear = 0;
             stright = 0;
             bend = 0;
             choose = 0;
@@ -37,15 +41,18 @@ public class GM2 : MonoBehaviour
             hanging = 0;
             open = 0;
             putdown = 0;
-            safe = 8;
             p = 0;
             place = 0;
             check = 0;
             ds = 0;
             pushed = 0;
-            
+            barrierds = 0;
+            babbletime = 0;
+            wait = 0;
 
-            }
+
+
+        }
         else if (this != instance)
         {
             string sceneName = SceneManager.GetActiveScene().name;
@@ -57,17 +64,31 @@ public class GM2 : MonoBehaviour
     {
         audio = GetComponent<AudioSource>();
     }
-        void Update()
+    void Update()
     {
         time += Time.deltaTime;
         deltaTime += Time.deltaTime;
-        if (safe < 7 && chance < 12)
+        if (safe < 8)
         {
-            dietime = (int)deltaTime;
-            Debug.Log(dietime);
-
-            if (dietime == 5) { chance++; audio.PlayOneShot(hit, 0.7F); deltaTime = 0; }
+            if (chance < 34 && time > 5)
+            {
+                dietime = (int)deltaTime;
+                if (safe == 7)
+                {
+                    if (dietime == 4) { chance++; deltaTime = 0; audio.PlayOneShot(hit, 0.7F); }
+                        //if (chance == 1 || chance == 4 || chance == 7 || chance == 10 || chance == 13 || chance == 16 || chance == 19 || chance == 22 || chance == 25|| chance == 31|| chance == 28|| chance >= 34) { audio.PlayOneShot(hit, 0.7F); }
+                    }
+                    else if (hanging == 1 && safe < 7)
+                {
+                    if (dietime == 1) { chance+=3;  deltaTime = 0; audio.PlayOneShot(hit, 0.7F); }
+                }
+                else
+                {
+                    if (dietime == 2) { chance++; deltaTime = 0; audio.PlayOneShot(hit, 0.7F); }
+                }
+            }
+            else { deltaTime = 0; dietime = 0; audio.Stop(); }
         }
-        else { deltaTime = 0; dietime = 0; audio.Stop(); }
+        else { time = 0; deltaTime = 0; dietime = 0; audio.Stop(); }
     }
 }

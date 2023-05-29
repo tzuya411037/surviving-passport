@@ -1,0 +1,143 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/RemptyTool/MessageSystem/Scenes/title.unity
+    guid: 2a36c6834a9507745af02eed4695bbe0
+  - enabled: 1
+    path: Assets/RemptyTool/MessageSystem/Scenes/New Scene.unity
+    guid: 3e2316bf105ca5e468a5804abeb6f7bd
+  - enabled: 1
+    path: Assets/RemptyTool/MessageSystem/Scenes/Thunder/outside.unity
+    guid: 36e53e8e44f77fe49913774fb883a8f9
+  - enabled: 1
+    path: Assets/RemptyTool/MessageSystem/Scenes/Thunder/outside2.unity
+    guid: 94a5cba9847971743996f4a0915d2005
+  - enabled: 1
+    path: Assets/RemptyTool/MessageSystem/Scenes/Thunder/outside3.unity
+    guid: 5265fa1df24e57846b2a998a36a63553
+  - enabled: 1
+    path: Assets/RemptyTool/MessageSystem/Scenes/Thunder/outside4(2).unity
+    guid: 31ed5c71ef3529444b5696dcdc2e7e92
+  - enabled: 1
+    path: Assets/RemptyTool/MessageSystem/Scenes/Thunder/outside5.unity
+    guid: d41cbbbdf18a11042abf81fc058d293a
+  - enabled: 1
+    path: Assets/RemptyTool/MessageSystem/Scenes/Thunder/outside5(2).unity
+    guid: 20b51cd6ae187df42a002a44dc300d55
+  - enabled: 1
+    path: Assets/RemptyTool/MessageSystem/Scenes/Thunder/Home.unity
+    guid: 4393e1a339700e745884c87af89e1a74
+  - enabled: 1
+    path: Assets/RemptyTool/MessageSystem/Scenes/Thunder/Ending.unity
+    guid: 31a17bbe658806a4bae302f300541511
+  - enabled: 1
+    path: Assets/RemptyTool/MessageSystem/Scenes/O1/Start.unity
+    guid: 95f22f9393bccfa40a1b7b5400e0486a
+  - enabled: 1
+    path: Assets/RemptyTool/MessageSystem/Scenes/O1/Livingroom/Livingroom.unity
+    guid: f18c34aa46f25114496669fc30815e9f
+  - enabled: 1
+    path: Assets/RemptyTool/MessageSystem/Scenes/O1/Personal room1.unity
+    guid: c2033763e348f9946a4dbed1470bcbf1
+  - enabled: 1
+    path: Assets/RemptyTool/MessageSystem/Scenes/O1/Personal room2.unity
+    guid: d60452023573ff74db18f614d08f642a
+  - enabled: 1
+    path: Assets/RemptyTool/MessageSystem/Scenes/O1/Livingroom/Livingroom2.unity
+    guid: 03bbc619cfa591545b5669b04205742a
+  - enabled: 1
+    path: Assets/RemptyTool/MessageSystem/Scenes/O1/Livingroom/Livingroom3.unity
+    guid: 184aee1f8b0468b4796758fd5977f024
+  - enabled: 1
+    path: Assets/RemptyTool/MessageSystem/Scenes/O1/bathroom.unity
+    guid: 497dc6a0c2a80e74fa51f99b48093bef
+  - enabled: 1
+    path: Assets/RemptyTool/MessageSystem/Scenes/O1/porch.unity
+    guid: 3e7c69b770437044084ee8a3af473384
+  - enabled: 1
+    path: Assets/RemptyTool/MessageSystem/Scenes/nuclear/Start3.unity
+    guid: 44f1f69a6b9e82743961b3dc417cc0e7
+  - enabled: 1
+    path: Assets/RemptyTool/MessageSystem/Scenes/nuclear/Livingroom/Livingroom3-1.unity
+    guid: 5fce44eef68f3c745bd9eea8e6372ef9
+  - enabled: 1
+    path: Assets/RemptyTool/MessageSystem/Scenes/nuclear/Livingroom/Livingroom3-2.unity
+    guid: 60b08794362e334498d3cd80b3694e2d
+  - enabled: 1
+    path: Assets/RemptyTool/MessageSystem/Scenes/nuclear/Livingroom/Livingroom3-3.unity
+    guid: de479fa0c252c7545810133c4ea21bf6
+  - enabled: 1
+    path: Assets/RemptyTool/MessageSystem/Scenes/nuclear/Personal room3-1.unity
+    guid: 4e1128326d9f8ca4fbb0b49177fd3fa7
+  - enabled: 1
+    path: Assets/RemptyTool/MessageSystem/Scenes/nuclear/bathroom3.unity
+    guid: ef446ec2d3e46db40817dd84c823bee0
+  - enabled: 1
+    path: Assets/RemptyTool/MessageSystem/Scenes/O1/choose.unity
+    guid: de83fb511a6a59f48ae307ff5401c045
+  - enabled: 1
+    path: Assets/RemptyTool/MessageSystem/Scenes/O1/porch2.unity
+    guid: 9a46d1ece1eba8d44bca19b1461f909d
+  - enabled: 1
+    path: Assets/RemptyTool/MessageSystem/Scenes/Thunder/outside2-2.unity
+    guid: 558e9328cfafb5d4b9c6e74f88a0a84b
+  - enabled: 1
+    path: Assets/RemptyTool/MessageSystem/Scenes/nuclear/bathroom3-2.unity
+    guid: 12a657694b3c7144d8053bf82d43b541
+  - enabled: 1
+    path: Assets/RemptyTool/MessageSystem/Scenes/nuclear/bathroomx3.unity
+    guid: 3202625519fcd5a42a6603458945ab28
+  - enabled: 1
+    path: Assets/RemptyTool/MessageSystem/Scenes/nuclear/Personal roomx3-1.unity
+    guid: 1827b1e09aa3b424087a75fcaf04eae6
+  - enabled: 1
+    path: Assets/RemptyTool/MessageSystem/Scenes/nuclear/Livingroom/Livingroomx3-1.unity
+    guid: 4a8eab09b270f634184d590e41951fd3
+  - enabled: 1
+    path: Assets/RemptyTool/MessageSystem/Scenes/nuclear/Livingroom/Livingroomx3-2.unity
+    guid: a2db29e37eb14644ab44c81577a69dab
+  - enabled: 1
+    path: Assets/RemptyTool/MessageSystem/Scenes/nuclear/Livingroom/Livingroomx3-3.unity
+    guid: bedbe54a3ca73f84ba43dd861dcae955
+  - enabled: 1
+    path: Assets/RemptyTool/MessageSystem/Scenes/nuclear/diang.unity
+    guid: 9ba74fececbb3284babfd848702a7187
+  - enabled: 1
+    path: Assets/RemptyTool/MessageSystem/Scenes/nuclear/diang2.unity
+    guid: 620c8bbb47487e24582fb41916ebacb9
+  - enabled: 1
+    path: Assets/RemptyTool/MessageSystem/Scenes/nuclear/Livingroom/Livingroom3-4.unity
+    guid: b3f358d1684a1dc47a653ba83adadd48
+  - enabled: 1
+    path: Assets/RemptyTool/MessageSystem/Scenes/nuclear/drink.unity
+    guid: 876ad2f885300334da7a013ef6fbf51c
+  - enabled: 1
+    path: Assets/RemptyTool/MessageSystem/Scenes/nuclear/Livingroom/Livingroom3-5.unity
+    guid: b5e059bea93efe14c805b684d50ae5e3
+  - enabled: 1
+    path: Assets/RemptyTool/MessageSystem/Scenes/nuclear/Livingroom/Livingroomx3-4.unity
+    guid: 478a29c0766623043a40170ff8f81409
+  - enabled: 1
+    path: Assets/RemptyTool/MessageSystem/Scenes/nuclear/Livingroom/Livingroomx3-5.unity
+    guid: 03df1ec80906d4b4f9ab58554097b72a
+  - enabled: 1
+    path: Assets/RemptyTool/MessageSystem/Scenes/nuclear/choosc.unity
+    guid: edef639afe5a1ff4fa24dcef90a32653
+  - enabled: 1
+    path: Assets/RemptyTool/MessageSystem/Scenes/nuclear/aspi.unity
+    guid: fa77f69080dcb4a41939c7aaa5186c5a
+  - enabled: 1
+    path: Assets/RemptyTool/MessageSystem/Scenes/nuclear/beforestart.unity
+    guid: d820a5054dd0b8f498d0ae659518023f
+  - enabled: 1
+    path: Assets/RemptyTool/MessageSystem/Scenes/nuclear/Gameover.unity
+    guid: d2680c75c78c8774881d1464c3c9bda4
+  - enabled: 1
+    path: Assets/RemptyTool/MessageSystem/Scenes/nuclear/Gameclear.unity
+    guid: f931e1f6c7f96804c90016aad3481bfc
+  m_configObjects: {}

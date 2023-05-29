@@ -30,7 +30,7 @@ public class checkdrink : MonoBehaviour
         if (ds < 4)
         {
             gameManager.ds = ds;
-            if (gameManager.ds < x && gameManager.ds != 0 && gameManager.green == 1 && gameManager.water < 1)
+            if (gameManager.ds < x && gameManager.ds != 0 && gameManager.window > 1 && gameManager.water < 1 && gameManager.green == 1)
             {
                 gameManager.checkdrink = 1;
                 check2.SetActive(true);

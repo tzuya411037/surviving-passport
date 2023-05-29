@@ -24,9 +24,10 @@ public class diang1 : MonoBehaviour
 
     }
     public void OnClick()
-    {
+    {   
         gameManager.diang = 1;
         count.SetActive(false);
+        if (gameManager.year < 18) { gameManager.chance += 18; }
         if (gameManager.green == 1)
         {
             SceneManager.LoadScene("Livingroomx3-4");

@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/RemptyTool/MessageSystem/Scenes/Thunder/outside2-2.unity
+- path: Assets/RemptyTool/MessageSystem/Scenes/Selection2.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

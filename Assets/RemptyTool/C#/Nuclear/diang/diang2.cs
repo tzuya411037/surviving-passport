@@ -29,8 +29,9 @@ public class diang2 : MonoBehaviour
     {
         gameManager.diang = 2;
         count.SetActive(false);
-       // gameManager.chance += 1;
-       // audio.PlayOneShot(hit, 0.7F);
+        if (gameManager.year < 3 || gameManager.year > 17) { gameManager.chance += 18; }
+        // gameManager.chance += 1;
+        // audio.PlayOneShot(hit, 0.7F);
         if (gameManager.green == 1)
         {
             SceneManager.LoadScene("Livingroomx3-4");

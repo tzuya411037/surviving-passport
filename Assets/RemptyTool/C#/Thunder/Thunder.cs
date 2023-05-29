@@ -149,7 +149,7 @@ public class Thunder : MonoBehaviour
         else
         {
             gameManager.chance = 0;
-            SceneManager.LoadScene("New Scene");
+            SceneManager.LoadScene("Selection2");
         }
     }
 

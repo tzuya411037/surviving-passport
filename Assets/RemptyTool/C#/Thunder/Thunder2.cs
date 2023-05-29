@@ -59,13 +59,13 @@ public class Thunder2 : MonoBehaviour
         int ThunderTime = (int)deltaTime;
         // Debug.Log(ThunderTime);
         
-        if (ThunderTime == 2) { audio.clip = pi; audio.Play(); }
-        if (ThunderTime == 3) { audio.clip = pipi; audio.Play(); }//6
-        if (ThunderTime == 4) { audio.clip = pipipi; audio.Play(); Isflashing = true; }//9
+        if (ThunderTime == 3) { audio.clip = pi; audio.Play(); }
+        if (ThunderTime == 4) { audio.clip = pipi; audio.Play(); }//6
+        if (ThunderTime == 5) { audio.clip = pipipi; audio.Play(); Isflashing = true; }//9
   
-        if (ThunderTime > 5)//11
+        if (ThunderTime > 6)//11
         {
-            if (gameManager.Tooclose1 == 1 || gameManager.Tooclose2 == 1 || gameManager.Tooclose3 == 1)
+            if (gameManager.Tooclose1 == 1 || gameManager.Tooclose2 == 1 || gameManager.Tooclose3 == 1 || animator.GetCurrentAnimatorStateInfo(0).IsName("down") == false)
             {  
 
                 audio.Stop();
@@ -158,7 +158,7 @@ public class Thunder2 : MonoBehaviour
             gameManager.tree3 = 0;
             gameManager.chance = 0;
             gameManager.stop = 0;
-            SceneManager.LoadScene("New Scene");
+            SceneManager.LoadScene("Selection2");
             }
        
 

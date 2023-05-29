@@ -30,7 +30,7 @@ public class checkmed : MonoBehaviour
         if (ds < 4)
         {
             gameManager.ds = ds;
-            if (gameManager.ds < x && gameManager.ds != 0 && gameManager.green == 1 && gameManager.aspi != 1 && gameManager.diang < 1)
+            if (gameManager.ds < x && gameManager.ds != 0 && gameManager.window > 1 && gameManager.aspi != 1 && gameManager.diang < 1 && gameManager.green == 1)
             {
                 gameManager.checkmed = 1;
                 check2.SetActive(true);

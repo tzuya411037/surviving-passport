@@ -28,7 +28,7 @@ public class Doorno : MonoBehaviour
     {
         ds = Vector3.Distance(myTransform.position, playerTransform.position);
 
-            if (ds < 1 && gameManager.green == 0)
+        if (ds < 1 && gameManager.window > 1)
             {
                 gameManager.babbletime = 5;
 

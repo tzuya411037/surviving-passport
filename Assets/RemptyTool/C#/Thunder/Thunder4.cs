@@ -185,7 +185,7 @@ public class Thunder4 : MonoBehaviour
                 gameManager.Thunderonwater = 0;
                 gameManager.Down = 0;
                 gameManager.water = 0;
-                SceneManager.LoadScene("New Scene");
+                SceneManager.LoadScene("Selection2");
             }
         
 

@@ -6,7 +6,7 @@ using UnityEngine;
 public class Heart3 : MonoBehaviour
 {
 
-    int HeartNum = 12;
+    int HeartNum = 34;
 
 
 
@@ -34,25 +34,25 @@ public class Heart3 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (gameManager.chance == 1)
+        if (gameManager.chance == 1 || gameManager.chance == 2 || gameManager.chance == 3)
         {
             HeartNum = HeartNum - 1;
             Heart01.SetActive(false);
         }
-        if (gameManager.chance == 2)
+        if (gameManager.chance == 4 || gameManager.chance == 5 || gameManager.chance == 6)
         {
             HeartNum = HeartNum - 1;
             Heart01.SetActive(false);
             Heart02.SetActive(false);
         }
-        if (gameManager.chance == 3)
+        if (gameManager.chance == 7 || gameManager.chance == 8 || gameManager.chance == 9)
         {
             HeartNum = HeartNum - 1;
             Heart01.SetActive(false);
             Heart02.SetActive(false);
             Heart03.SetActive(false);
         }
-        if (gameManager.chance == 4)
+        if (gameManager.chance == 10 || gameManager.chance == 11 || gameManager.chance == 12)
         {
             HeartNum = HeartNum - 1;
             Heart01.SetActive(false);
@@ -60,7 +60,7 @@ public class Heart3 : MonoBehaviour
             Heart03.SetActive(false);
             Heart04.SetActive(false);
         }
-        if (gameManager.chance == 5)
+        if (gameManager.chance == 13 || gameManager.chance == 14 || gameManager.chance == 15)
         {
             HeartNum = HeartNum - 1;
             Heart01.SetActive(false);
@@ -69,7 +69,7 @@ public class Heart3 : MonoBehaviour
             Heart04.SetActive(false);
             Heart05.SetActive(false);
         }
-        if (gameManager.chance == 6)
+        if (gameManager.chance == 16 || gameManager.chance == 17 || gameManager.chance == 18)
         {
             HeartNum = HeartNum - 1;
             Heart01.SetActive(false);
@@ -79,7 +79,7 @@ public class Heart3 : MonoBehaviour
             Heart05.SetActive(false);
             Heart06.SetActive(false);
         }
-        if (gameManager.chance == 7)
+        if (gameManager.chance == 19 || gameManager.chance == 20 || gameManager.chance == 21)
         {
             HeartNum = HeartNum - 1;
             Heart01.SetActive(false);
@@ -90,7 +90,7 @@ public class Heart3 : MonoBehaviour
             Heart06.SetActive(false);
             Heart07.SetActive(false);
         }
-        if (gameManager.chance == 8)
+        if (gameManager.chance == 22 || gameManager.chance == 23 || gameManager.chance == 24)
         {
             HeartNum = HeartNum - 1;
             Heart01.SetActive(false);
@@ -102,7 +102,7 @@ public class Heart3 : MonoBehaviour
             Heart07.SetActive(false);
             Heart08.SetActive(false);
         }
-        if (gameManager.chance == 9)
+        if (gameManager.chance == 25 || gameManager.chance == 26 || gameManager.chance == 27)
         {
             HeartNum = HeartNum - 1;
             Heart01.SetActive(false);
@@ -115,7 +115,7 @@ public class Heart3 : MonoBehaviour
             Heart08.SetActive(false);
             Heart09.SetActive(false);
         }
-        if (gameManager.chance == 10)
+        if (gameManager.chance == 28 || gameManager.chance == 29 || gameManager.chance == 30)
         {
             HeartNum = HeartNum - 1;
             Heart01.SetActive(false);
@@ -129,7 +129,7 @@ public class Heart3 : MonoBehaviour
             Heart09.SetActive(false);
             Heart10.SetActive(false);
         }
-        if (gameManager.chance == 11)
+        if (gameManager.chance == 31 || gameManager.chance == 32 || gameManager.chance == 33)
         {
             HeartNum = HeartNum - 1;
             Heart01.SetActive(false);
@@ -144,7 +144,7 @@ public class Heart3 : MonoBehaviour
             Heart10.SetActive(false);
             Heart11.SetActive(false);
         }
-        if (gameManager.chance == 12)
+        if (gameManager.chance >= 34)
         {
             HeartNum = HeartNum - 1;
             Heart01.SetActive(false);
@@ -181,7 +181,35 @@ public class Heart3 : MonoBehaviour
         gameManager.hanging = 0;
         gameManager.open = 0;
         gameManager.safe = 8;
-        SceneManager.LoadScene("New Scene");
+        gameManager.cloth = 0;
+        gameManager.hold = 0;
+        gameManager.choose = 0;
+        gameManager.gasound = 0;
+        gameManager.open = 0;
+        gameManager.open2 = 0;
+        gameManager.hanging = 0;
+        gameManager.safe = 8;
+        gameManager.wash = 0;
+        gameManager.playone = 0;
+        gameManager.window = 0;
+        gameManager.wk = 0;
+        gameManager.wait = 0;
+        gameManager.fin = 0;
+        gameManager.check = 0;
+        gameManager.checkmed = 0;
+        gameManager.checkdrink = 0;
+        gameManager.pushed = 0;
+        gameManager.diang = 0;
+        gameManager.water = 0;
+        gameManager.stop = 0;
+        gameManager.green = 0;
+        gameManager.sleep = 0;
+        gameManager.aspi = 0;
+        gameManager.fullbag = 0;
+        gameManager.clear = 0;
+        gameManager.babbletime = 0;
+        gameManager.year = 0;
+        SceneManager.LoadScene("Selection3");
     }
 
 

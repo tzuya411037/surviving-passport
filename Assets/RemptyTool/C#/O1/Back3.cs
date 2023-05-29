@@ -31,8 +31,22 @@ public class Back3 : MonoBehaviour
         gameManager.open = 0;
         gameManager.putdown = 0;
         gameManager.safe = 8;
-
-        SceneManager.LoadScene("New Scene");
+        gameManager.numb = 0;
+        gameManager.bb = 0;
+        gameManager.call = 0;
+        gameManager.stright = 0;
+        gameManager.bend = 0;
+        gameManager.choose = 0;
+        gameManager.gasound = 0;
+        gameManager.p = 0;
+        gameManager.place = 0;
+        gameManager.check = 0;
+        gameManager.ds = 0;
+        gameManager.pushed = 0;
+        gameManager.barrierds = 0;
+        gameManager.babbletime = 0;
+        gameManager.wait = 0;
+        SceneManager.LoadScene("Selection3");
     }
     void Update()
     {

@@ -38,12 +38,12 @@ public class window3n1 : MonoBehaviour
                 if (gameManager.y % 2 != 0 && gameManager.y != 0)
                 {
                     gameManager.window++;
-                }
-                else { gameManager.window--; }
+            }
+                else { gameManager.window--;}
             
         }
         if (gameManager.y % 2 == 0) { gameManager.open = 1; WinAni.SetInteger("Op", 1); }
-        else { gameManager.open = 0; WinAni.SetInteger("Op", 0); }
+        else { gameManager.open = 0; WinAni.SetInteger("Op", 0);}
         Debug.Log(gameManager.y);
 
     }

@@ -27,6 +27,7 @@ public class diang3 : MonoBehaviour
     {
         gameManager.diang = 3;
         count.SetActive(false);
+        if (gameManager.year > 3) { gameManager.chance += 18; }
         if (gameManager.green == 1)
         {
             SceneManager.LoadScene("Livingroomx3-4");

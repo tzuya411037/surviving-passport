@@ -17,7 +17,7 @@ public class Rood2 : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            if (gameManager.hanging == 1 && gameManager.safe > 6)
+            if (gameManager.hanging == 1 && gameManager.safe == 7)
             {
                 gameManager.safe = 8;
                 SceneManager.LoadScene(goToTheScene);

@@ -23,8 +23,11 @@ public class insdie : MonoBehaviour
 
     }
     public void OnClick()
-    {   
+    {
+         
         SceneManager.LoadScene("choose");
+       
+
     }
 
 }

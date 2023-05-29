@@ -86,6 +86,7 @@ public class Thunder7 : MonoBehaviour
                 Isthundering = true;
                 audio.PlayOneShot(OOO);
                 deltaTime = 0;
+                gameManager.inside = 0;
                 gameManager.chance += 1;
                 FadeToLevel(SceneManager.GetActiveScene().buildIndex);
             }
@@ -120,8 +121,8 @@ public class Thunder7 : MonoBehaviour
                 if (gameManager.inside2 == 1 || gameManager.inside == 1) { deltaTime = 0; }
                 if (gameManager.inhouse == 2) { gameManager.inhouse = 0; }
                 if (ThunderTime == 3) { audio.clip = pipi; audio.Play(); }
-                if (ThunderTime == 5) { Isflashing = true; }
-                if (ThunderTime > 5)
+                if (ThunderTime == 6) { Isflashing = true; } //5
+                if (ThunderTime > 6) //5
                    {
                     if (animator.GetCurrentAnimatorStateInfo(0).IsName("Buck")
                      || animator.GetCurrentAnimatorStateInfo(0).IsName("front")
@@ -214,7 +215,7 @@ public class Thunder7 : MonoBehaviour
                 gameManager.inside = 0;
                 gameManager.Down = 0;
                 gameManager.Thunderonwater = 0;
-                SceneManager.LoadScene("New Scene");
+                SceneManager.LoadScene("Selection2");
             }
        
     }

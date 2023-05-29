@@ -17,7 +17,7 @@ public class Door2x : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            if (gameManager.hold != 1)
+            if (gameManager.hold != 1 && gameManager.wash !=2)
             {
                 gameManager.playone = 0;
                 SceneManager.LoadScene(goToTheScene);

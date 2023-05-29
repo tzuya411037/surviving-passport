@@ -7,8 +7,12 @@ public class cellphone : MonoBehaviour
 {
     public AudioSource audio;
     public AudioClip Ring;
-    public GameObject count;
+    GM2 gameManager;
     // Start is called before the first frame update
+    void Awake()
+    {
+        gameManager = FindObjectOfType<GM2>();
+    }
     void Start()
     {
         audio = GetComponent<AudioSource>();
@@ -22,6 +26,6 @@ public class cellphone : MonoBehaviour
     public void OnClick()
     {
         audio.PlayOneShot(Ring, 0.7F);
-        count.SetActive(true);
+        gameManager.call = 1;
     }
 }

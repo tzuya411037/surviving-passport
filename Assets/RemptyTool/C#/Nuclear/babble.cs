@@ -29,10 +29,26 @@ public class babble : MonoBehaviour
 
         transform.position = new Vector3(player.position.x + offset.x, player.position.y + offset.y, offset.z); // Camera follows the player with specified offset position  
 
-        if (gameManager.babbletime > 3 && gameManager.green == 0)
+        if (gameManager.babbletime > 2)
         {
-            babbleAni.SetInteger("Status", 1);
-            if (gameManager.babbletime > 12) { deltaTime = 0; babbleAni.SetInteger("Status", 0); }
+            gameManager.wait = 1;
         }
+        if (gameManager.window < 2)
+        {
+            if (gameManager.wait == 1)
+            {
+                babbleAni.SetInteger("Status", 1);
+            }
+        }
+        else if (gameManager.green == 0) {
+            
+            if (gameManager.wait == 1)
+            {
+                babbleAni.SetInteger("Status", 2);
+            }
+        }
+        else { deltaTime = 0; babbleAni.SetInteger("Status", 0); }
+           // if (gameManager.babbletime > 12) { deltaTime = 0; babbleAni.SetInteger("Status", 0); }
+        
     }
 }

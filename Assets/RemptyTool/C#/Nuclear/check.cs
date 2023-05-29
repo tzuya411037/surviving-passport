@@ -28,9 +28,9 @@ public class check : MonoBehaviour
     {
         ds = Vector3.Distance(pointTransform.position, playerTransform.position);
         if (ds < 4)
-        {  
+        {
             gameManager.ds = ds;
-            if (gameManager.ds < x && gameManager.ds != 0 && gameManager.green == 1)
+            if (gameManager.ds < x && gameManager.ds != 0 && gameManager.window > 1 && gameManager.green == 1)
             {
                 gameManager.check = 1;
                 check2.SetActive(true);

@@ -38,7 +38,7 @@ public class window3n2 : MonoBehaviour
                 if (gameManager.z % 2 != 0 && gameManager.z != 0)
                 {
                     gameManager.window++;
-                }
+            }
                 else { gameManager.window--; }
             }
         if (gameManager.z % 2 == 0) { gameManager.open = 1; WinAni.SetInteger("Op", 1); }

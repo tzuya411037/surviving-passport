@@ -27,8 +27,8 @@ public class Gas : MonoBehaviour
         myTransform = this.transform;
         if (gameManager.gasound == 0)
         {
-            audio.loop = true;
             audio.PlayOneShot(swi, 1);
+
         }
     }
 
@@ -40,6 +40,7 @@ public class Gas : MonoBehaviour
         {
             if (ds < 0.7 && gameManager.gasound == 0)
             {
+                if (gameManager.safe < 2) { gameManager.chance += 9; }
                 audio.loop = false;
                 audio.Stop();
                 audio.PlayOneShot(un, 1);

@@ -21,6 +21,7 @@ public class chosen : MonoBehaviour
     // Update is called once per frame
     public void OnClick()
     {
+        gameManager.bb = 1;
         SceneManager.LoadScene("porch2");
     }
     void Update()

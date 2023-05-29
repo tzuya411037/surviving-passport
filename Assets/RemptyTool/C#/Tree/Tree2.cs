@@ -33,8 +33,14 @@ public class Tree2 : MonoBehaviour
     {
         ds = Vector3.Distance(treeTransform.position, playerTransform.position);
         if (ds < 4) { gameManager.tree2 = ds; ThunderTransform.position = treeTransform.position; }
-        if (gameManager.tree2 < 2 && gameManager.tree2 != 0 && animator.transform.localScale.y > 0.76F) { gameManager.Tooclose2 = 1; }
-        else { gameManager.Tooclose2 = 0; }
+        if (gameManager.tree2 < 2.5 && gameManager.tree2 != 0 && animator.transform.localScale.y > 0.76F) { gameManager.Tooclose2 = 1; ThunderTransform.position = playerTransform.position; }
+        else { gameManager.Tooclose2 = 0;
+            ThunderTransform.position = playerTransform.position;
+            if (animator.GetCurrentAnimatorStateInfo(0).IsName("down"))
+            {
+                ThunderTransform.position += new Vector3(2, 0, 0);
+            }
+        }
         // Debug.Log(gameManager.ds2);
     }
 }

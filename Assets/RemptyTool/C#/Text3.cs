@@ -37,7 +37,7 @@ public class Text3 : MonoBehaviour
 
         if (TextTime > 1) { Text01.SetActive(true); }
         if (TextTime > 5) { animator.SetTrigger("Fade out");}
-        if (TextTime > 8) {SceneManager.LoadScene("New Scene");}
+        if (TextTime > 8) {SceneManager.LoadScene("Selection2");}
     }
   
 }

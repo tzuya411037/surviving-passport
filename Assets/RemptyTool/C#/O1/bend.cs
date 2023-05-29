@@ -24,8 +24,9 @@ public class bend : MonoBehaviour
     }
     public void OnClick()
     {
-        gameManager.bend = 1;
-        gameManager.choose = 1;
-        inside.SetActive(true);
+            gameManager.bend = 1;
+            gameManager.choose = 1;
+            inside.SetActive(true);
+        
     }
 }

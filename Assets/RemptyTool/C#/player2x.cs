@@ -81,7 +81,7 @@ public class player2x : MonoBehaviour
             }
 
         }
-        else if (gameManager.putdown == 1) {
+      /*  else if (gameManager.putdown == 1) {
             Isputdown = true;
             if (Input.GetKeyDown(KeyCode.Space) && playerAni.GetInteger("Status") > 13 && gameManager.place > 0)
             {
@@ -89,7 +89,7 @@ public class player2x : MonoBehaviour
             }
 
                 
-        }
+        } */
         else
         {
             if (Input.GetKey(KeyCode.RightArrow))
@@ -209,7 +209,7 @@ public class player2x : MonoBehaviour
         {
             if (playerAni.GetInteger("Status") == 11) { playerAni.SetInteger("Status", 12); }
         }
-        if (Isputdown)
+     /*   if (Isputdown)
         {
             playerAni.SetInteger("Status", 13);
             if (gameManager.stright == 1) { playerAni.SetInteger("Status", 14); }
@@ -224,7 +224,7 @@ public class player2x : MonoBehaviour
                 if (gameManager.stright == 1) { playerAni.SetInteger("Status", 14); }
                 if (gameManager.bend == 1) { playerAni.SetInteger("Status", 15); }
             }
-        }
+        } */
         
 
     }

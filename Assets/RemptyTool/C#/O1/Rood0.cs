@@ -17,7 +17,7 @@ public class Rood0 : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            gameManager.safe = 0;
+            //gameManager.safe = 0;
             SceneManager.LoadScene(goToTheScene);
         }
     }

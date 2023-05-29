@@ -150,7 +150,7 @@ public class Thunder2n2 : MonoBehaviour
         {
             gameManager.chance = 0;
             gameManager.stop = 0;
-            SceneManager.LoadScene("New Scene");
+            SceneManager.LoadScene("Selection2");
         }
 
 

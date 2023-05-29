@@ -11,6 +11,7 @@ public class lab2 : MonoBehaviour
     public SpriteRenderer playerSr;
     public Transform playerTransform;
     public Animator playerAni;
+    public Animator animator;
 
     // Start is called before the first frame update
     void Start()
@@ -26,19 +27,19 @@ public class lab2 : MonoBehaviour
     private void FixedUpdate()
     {
         Vector2 direction = Vector2.up * joystick.Vertical + Vector2.right * joystick.Horizontal;
-        if (direction.x < 0 && direction.y < 0.4 && direction.y > -0.4)   //right
+        if (direction.x < -0.8 && direction.y < 0.4 && direction.y > -0.4 && playerAni.GetCurrentAnimatorStateInfo(0).IsName("down") == false && playerAni.GetCurrentAnimatorStateInfo(0).IsName("back") == false && animator.GetCurrentAnimatorStateInfo(0).IsName("thunder")==false)   //right
         {  
             playerSr.flipX = true;
             playerAni.SetInteger("Status", 1);
             gameObject.transform.Translate(new Vector2(direction.x, 0) * velocidad * Time.deltaTime);
         }
-        else if (direction.x > 0 && direction.y < 0.4 && direction.y > -0.4)  //left
+        else if (direction.x > 0.8 && direction.y < 0.4 && direction.y > -0.4 && playerAni.GetCurrentAnimatorStateInfo(0).IsName("down") == false && playerAni.GetCurrentAnimatorStateInfo(0).IsName("back") == false && animator.GetCurrentAnimatorStateInfo(0).IsName("thunder") == false)  //left
         {
             playerSr.flipX = false;
             playerAni.SetInteger("Status", 1);
             gameObject.transform.Translate(new Vector2(direction.x, 0) * velocidad * Time.deltaTime);
         }
-        else if (direction.y > 0.4)  //top
+        else if (direction.y > 0.4 && playerAni.GetCurrentAnimatorStateInfo(0).IsName("down") == false && playerAni.GetCurrentAnimatorStateInfo(0).IsName("back") == false && animator.GetCurrentAnimatorStateInfo(0).IsName("thunder") == false)  //top
         {
             playerAni.SetInteger("Status", 6);
             if (transform.localScale.y > 0.3474974f && transform.localScale.x > 0.3474974f)
@@ -47,7 +48,7 @@ public class lab2 : MonoBehaviour
             }
         }
 
-        else if (direction.y < -0.4)   //bottom
+        else if (direction.y < -0.4 && playerAni.GetCurrentAnimatorStateInfo(0).IsName("down") == false && playerAni.GetCurrentAnimatorStateInfo(0).IsName("back") == false && animator.GetCurrentAnimatorStateInfo(0).IsName("thunder") == false)   //bottom
         {
             playerAni.SetInteger("Status", 5);
             if (transform.localScale.y < 0.9475018f && transform.localScale.x < 0.9475018f)

@@ -29,7 +29,7 @@ public class BACK : MonoBehaviour
         gameManager.fall = 0;
         gameManager.time = 0;
         gameManager.shoes = 0;
-        SceneManager.LoadScene("New Scene"); 
+        SceneManager.LoadScene("Selection2"); 
     }
     void Update()
     {

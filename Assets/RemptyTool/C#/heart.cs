@@ -26,11 +26,7 @@ public class heart : MonoBehaviour
 
     public GameObject Heart03;
 
-    public GameObject b01;
 
-
-
-    public GameObject b02;
     GM gameManager;
     // Start is called before the first frame update
     void Awake()
@@ -64,15 +60,5 @@ public class heart : MonoBehaviour
             Heart03.SetActive(false);
         }
         
-        if (gameManager.choose == 1)
-        {
-            b01.SetActive(true);
-            b02.SetActive(true);
-        }
-        else
-        {
-            b01.SetActive(false);
-            b02.SetActive(false);
-        }
     }
 }

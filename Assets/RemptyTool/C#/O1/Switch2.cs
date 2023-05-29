@@ -50,7 +50,7 @@ public class Switch2 : MonoBehaviour
 
         if (gameManager.x == 0) { deltaTime = 0; }
 
-        if (bombtime > 1) { audio.PlayOneShot(boom, 0.4F); deltaTime = 0; gameManager.chance = 12; }
+        if (bombtime > 1) { audio.PlayOneShot(boom, 0.4F); deltaTime = 0; gameManager.chance = 35; }
         Debug.Log(gameManager.x);
 
     }

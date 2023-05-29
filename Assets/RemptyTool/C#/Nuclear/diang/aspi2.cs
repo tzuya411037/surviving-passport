@@ -26,7 +26,7 @@ public class aspi2 : MonoBehaviour
     public void OnClick()
     {
         gameManager.aspi = 1;
-        gameManager.chance += 3;
+        gameManager.chance += 18;
         count.SetActive(false);
         if (gameManager.green == 1)
         {

@@ -33,9 +33,9 @@ public class settle : MonoBehaviour
         ds = Vector3.Distance(myTransform.position, playerTransform.position);
         if (ds < 4 && gameManager.pushed == 1)
         {
-            if (gameManager.chance > 5)
+            if (gameManager.water == 0 || gameManager.diang == 0 && gameManager.aspi == 0 || gameManager.green == 0 || gameManager.window < 2 || gameManager.wash == 0 && gameManager.fullbag == 0)
             {
-                SceneManager.LoadScene("Gameover");
+                gameManager.chance += 35;
             }
             else { SceneManager.LoadScene("Gameclear"); }
         }

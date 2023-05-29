@@ -24,6 +24,7 @@ public class diang0o2 : MonoBehaviour
     }
     public void OnClick()
     {
+        gameManager.year = Random.Range(1, 31);
         SceneManager.LoadScene("diang2");
 
     }

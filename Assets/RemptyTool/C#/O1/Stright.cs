@@ -24,9 +24,10 @@ public class Stright : MonoBehaviour
     }
     public void OnClick()
     {
-        gameManager.stright = 1;
-        gameManager.choose = 1;
-        inside.SetActive(true);
 
+            gameManager.stright = 1;
+            gameManager.choose = 1;
+            inside.SetActive(true);
+       
     }
 }

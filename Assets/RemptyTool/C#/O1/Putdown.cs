@@ -9,7 +9,7 @@ public class Putdown : MonoBehaviour
     // Start is called before the first frame update
     GM2 gameManager;
     public float ds;
-    public GameObject phone,bend,straight,space;
+    public GameObject phone,press,space;
     void Awake()
     {
         gameManager = FindObjectOfType<GM2>();
@@ -28,15 +28,14 @@ public class Putdown : MonoBehaviour
     {
         ds = Vector3.Distance(pointTransform.position, playerTransform.position);
         if (ds < 0.2) { gameManager.putdown = 1;
-            if (gameManager.choose != 1)
+            if (gameManager.call < 1)
             {
-                straight.SetActive(true);
-                bend.SetActive(true);
+                phone.SetActive(true);
+                press.SetActive(true);
             }
-            phone.SetActive(true);
             if (gameManager.place > 0) {space.SetActive(true); }
         }
         else { gameManager.putdown = 0; }
-        Debug.Log(ds);
+      //  Debug.Log(ds);
     }
 }
